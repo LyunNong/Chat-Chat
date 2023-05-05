@@ -19,7 +19,7 @@ jobs:
             - uses: mr-smithers-excellent/docker-build-push@v6
               name: Build & push Docker image for chatchat ${{inputs.version}}
               with:
-                  image: umami
+                  image: chatchat
                   tags: ${{ inputs.version }}, latest
                   registry: ghcr.io
                   multiPlatform: true
